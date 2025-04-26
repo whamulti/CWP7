@@ -1,0 +1,49 @@
+
+
+Verificar versão do sistema
+
+# cat /etc/os-release
+
+# dnf update -y
+
+# dnf install -y nano wget epel-release
+
+
+Configurar hostname
+
+# echo "cwp7.whamulti.com.br" > /etc/hostname
+
+---
+
+# setenforce 0
+
+# sed -i 's/^SELINUX=.*/SELINUX=disabled/' /etc/selinux/config
+
+# reboot
+
+
+----
+
+
+# cd /usr/local/src
+
+# wget http://centos-webpanel.com/cwp-el8-latest
+
+# sh cwp-el8-latest
+
+
+
+
+Admin
+
+
+-----
+
+
+Usuer
+
+
+
+
+
+
